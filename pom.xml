@@ -13,6 +13,7 @@
     <module>spring-security-user-service-2</module>
     <module>spring-security-auth-provider-3</module>
     <module>project-my-book-collection</module>
+    <module>live-spades-score</module>
   </modules>
 
   <name>thetechstack-projects</name>
