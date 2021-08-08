@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import net.thetechstack.livespadesscore.models.Game;
 
-public interface GameRepository extends JpaRepository<Game, String>{
+public interface GameRepository extends JpaRepository<Game, Integer>{
     
 }

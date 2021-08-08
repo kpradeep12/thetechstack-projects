@@ -1,4 +1,4 @@
-package net.thetechstack.livespadesscore.config;
+/*package net.thetechstack.livespadesscore.config;
 
 import java.util.List;
 
@@ -22,3 +22,4 @@ public class InMemoryUserDetailService implements UserDetailsService{
     }
     
 }
+*/
