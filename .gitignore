@@ -25,3 +25,21 @@ hs_err_pid*
 .idea/
 
 .DS_Store
+
+**/node_modules
+**/build
+**/jspm_packages
+**/dist
+**/typings
+**/.npm
+
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+**/target
+target/
+**/.vscode
+**/.settings
+**/.project
