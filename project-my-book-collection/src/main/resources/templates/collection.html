@@ -15,7 +15,7 @@
 
 <nav class="site-header sticky-top py-1" th:fragment="navigation">
     <div class="container d-flex flex-column flex-md-row">
-        <a class="py-2 d-none d-md-inline-block" href="/collection">My Collection</a>
+        <a class="py-2 d-none d-md-inline-block" href="/">My Collection</a>
         <a class="pl-4 py-2 d-none d-md-inline-block" href="/books">Search Books</a>
     </div>
 </nav>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <form th:action="@{/collection/remove/{bookId}(bookId=${book.bookId})}" method="post" >
+                        <form th:action="@{/remove/{bookId}(bookId=${book.bookId})}" method="post" >
                             <button type="submit" class="btn btn-secondary btn-sm float-right">Remove</button>
                         </form>
                     </div>

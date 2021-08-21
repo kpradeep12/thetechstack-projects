@@ -15,7 +15,7 @@
 
 <nav class="site-header sticky-top py-1" th:fragment="navigation">
     <div class="container d-flex flex-column flex-md-row ">
-        <a class="py-2 d-none d-md-inline-block" href="/collection">My Collection</a>
+        <a class="py-2 d-none d-md-inline-block" href="/">My Collection</a>
         <a class="pl-4 py-2 d-none d-md-inline-block" href="/books">Search Books</a>
     </div>
 </nav>
@@ -48,7 +48,7 @@
                             
                         </p>
                     </div>
-                    <form th:action="@{/collection/add/{bookId}(bookId=${book.bookId})}" method="post" class="p-2">
+                    <form th:action="@{/add/{bookId}(bookId=${book.bookId})}" method="post" class="p-2">
                         <button type="submit" class="btn btn-secondary btn-sm float-right">Add</button>
                     </form>
                 </div>

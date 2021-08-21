@@ -19,7 +19,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/collection")
+@RequestMapping("/")
 public class CollectionController {
     @Autowired CollectionRepository collectionRepository;
     @Autowired ReaderRepository readerRepository;
@@ -42,7 +42,7 @@ public class CollectionController {
             Collection collection = new Collection(reader.get(), book.get());
             collectionRepository.save(collection);
         }
-        return new RedirectView("/collection");
+        return new RedirectView("/");
     }
 
     @PostMapping("/remove/{bookId}")
@@ -53,6 +53,6 @@ public class CollectionController {
             Collection collection = new Collection(reader.get(), book.get());
             collectionRepository.delete(collection);
         }
-        return new RedirectView("/collection");
+        return new RedirectView("/");
     }
 }

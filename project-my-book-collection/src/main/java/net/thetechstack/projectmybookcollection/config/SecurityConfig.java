@@ -19,8 +19,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
     @Override
     protected void configure(final HttpSecurity httpSecurity) throws Exception {
-        httpSecurity.formLogin()
-                .loginPage("/login")
-                .defaultSuccessUrl("/collection", true);
+        httpSecurity.formLogin().defaultSuccessUrl("/", true);
+        httpSecurity.authorizeRequests().anyRequest().authenticated();
+        //.loginPage("/login");
+        //httpSecurity.formLogin()
+          //      .loginPage("/login")
+            //    .defaultSuccessUrl("/collection", true);
     }
 }
