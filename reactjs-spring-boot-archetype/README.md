@@ -20,9 +20,9 @@ Clone this repo and execute below command to install in local repository.
 `mvn clean install`
 
 
-## Generate ReactJs and Spring project
+## Generate ReactJS and Spring project
 
-Once this archetype is installed in local repository, then it will be ready to use to generate ReactJs and Spring boot project.
+Once this archetype is installed in local repository, then we can use this archetype to generate ReactJS and Spring boot project.
 
 `mvn archetype:generate -DarchetypeGroupId=net.thetechstack -DarchetypeArtifactId=reactjs-spring-boot-archetype -DarchetypeVersion=1.0 -DgroupId=<group-id> -DartifactId=<project-name>`
 
@@ -30,8 +30,8 @@ Provide proper values for \<group-id> and \<project-name>.
 
 ### Contents of the project
 - **pom.xml**: Maven POM file
-- **src**: Java/Spring boot source folder 
-- **ui**: ReactJs files.
+- **src**: Java/Spring boot source folder (back-end)
+- **ui**: ReactJS files (front-end)
 
 ### Compile and Run project
 
